@@ -465,12 +465,6 @@ EdgeCollider2D:
   - {x: 3.7809844, y: 10.080478}
   - {x: 6.274543, y: 7.5981193}
   - {x: 6.2599235, y: 6.41464}
---- !u!1 &320893400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5621928210999800957, guid: 9e6dca4e46bf14049bbd6b57750909cb,
-    type: 3}
-  m_PrefabInstance: {fileID: 5621928210072361362}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &429238183 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1728578205042189443, guid: b09daebf757f8634fadf6dc841cec54c,
@@ -639,40 +633,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9068886450014808137}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1019542227 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5621928209212285761, guid: 9e6dca4e46bf14049bbd6b57750909cb,
-    type: 3}
-  m_PrefabInstance: {fileID: 5621928210072361362}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1019542228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019542227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3608d363ae70d3444b9f4ba47a8fbb43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiPath: {fileID: 1019542230}
-  VogonGFX: {fileID: 320893400}
-  target: {fileID: 535375735}
-  minDistance: 5
---- !u!114 &1019542230 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1019542230, guid: 9e6dca4e46bf14049bbd6b57750909cb,
-    type: 3}
-  m_PrefabInstance: {fileID: 5621928210072361362}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019542227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1043765497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,15 +1612,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1019542228, guid: 9e6dca4e46bf14049bbd6b57750909cb, type: 3}
-      propertyPath: m_Radius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1019542228, guid: 9e6dca4e46bf14049bbd6b57750909cb, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 5afcbe60ec064d944b7d556f2e42637e, type: 2}
     - target: {fileID: 1019542229, guid: 9e6dca4e46bf14049bbd6b57750909cb, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 535375735}
+    - target: {fileID: 123189105298421841, guid: 9e6dca4e46bf14049bbd6b57750909cb,
+        type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 535375735}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.SceneManagement;
 
 public class Enemy_Behaviour : MonoBehaviour
 {
@@ -42,7 +43,14 @@ public class Enemy_Behaviour : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, startPosition, 1 * Time.deltaTime);
             }
         }
-
-        
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Poem");
+        }
+    }
+
 }
