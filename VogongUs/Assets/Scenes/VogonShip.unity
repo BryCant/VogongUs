@@ -633,106 +633,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9068886450014808137}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1019542227 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5621928209212285761, guid: 9e6dca4e46bf14049bbd6b57750909cb,
-    type: 3}
-  m_PrefabInstance: {fileID: 5621928210072361362}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &1019542228
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019542227}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 50
---- !u!114 &1019542229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019542227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  target: {fileID: 535375735}
---- !u!114 &1019542230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019542227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 2
-  radius: 11.56
-  height: 2
-  repathRate: 0.5
-  canSearch: 1
-  canMove: 1
-  maxSpeed: 2
-  gravity: {x: 0, y: 0, z: 0}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  centerOffsetCompatibility: NaN
-  orientation: 1
-  enableRotation: 0
-  targetCompatibility: {fileID: 0}
-  maxAcceleration: -2.5
-  rotationSpeed: 360
-  slowdownDistance: 0.6
-  pickNextWaypointDist: 2
-  endReachedDistance: 0.2
-  alwaysDrawGizmos: 0
-  slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 0
-  constrainInsideGraph: 0
---- !u!114 &1019542231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019542227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  drawGizmos: 1
-  detailedGizmos: 0
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  graphMask:
-    value: -1
 --- !u!1 &1043765497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,24 +976,24 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 17.008574, y: -1.1773084}
       - {x: 15.372349, y: -1.17714}
-      - {x: 15.152821, y: -1.8769144}
-      - {x: 17.032146, y: -1.3413486}
-      - {x: 18.52419, y: -0.24412283}
-      - {x: 18.492397, y: 1.7074363}
-      - {x: 17.19483, y: 2.7086036}
-      - {x: 16.99879, y: 2.8927498}
-      - {x: 15.297, y: 2.9083316}
-      - {x: 15.284464, y: 2.5206003}
-      - {x: 14.4586935, y: 2.740322}
+      - {x: 14.728186, y: -2.983998}
+      - {x: 16.971485, y: -3.070219}
+      - {x: 18.979156, y: -2.4431248}
+      - {x: 19.435707, y: 0.27070174}
+      - {x: 19.2556, y: 2.7811658}
+      - {x: 18.7548, y: 4.880958}
+      - {x: 16.18226, y: 4.7078776}
+      - {x: 14.384691, y: 3.899285}
+      - {x: 13.602942, y: 4.451825}
       - {x: 12.110392, y: 3.733059}
-      - {x: 12.448694, y: 6.4646187}
-      - {x: 10.242019, y: 8.617142}
-      - {x: 9.08781, y: 8.738134}
-      - {x: 8.891459, y: 8.277025}
+      - {x: 14.920868, y: 7.130203}
+      - {x: 12.286315, y: 10.994228}
+      - {x: 7.9943495, y: 10.925055}
+      - {x: 7.560289, y: 9.4655695}
       - {x: 8.880383, y: 7.9658327}
       - {x: 3.8019009, y: 11.618594}
       - {x: -1.6426961, y: 11.248693}
-      - {x: -3.54098, y: 9.744024}
+      - {x: -5.347566, y: 12.02603}
       - {x: -14.25478, y: 10.266371}
       - {x: -15.226736, y: 6.516863}
       - {x: -18.191359, y: 4.0916395}
@@ -1101,8 +1001,8 @@ PolygonCollider2D:
       - {x: -19.137766, y: -2.1274447}
       - {x: -18.213915, y: -4.4305186}
       - {x: -17.202635, y: -7.0781765}
-      - {x: -11.8912, y: -8.802674}
-      - {x: -8.330527, y: -9.295799}
+      - {x: -13.928125, y: -10.044704}
+      - {x: -9.622234, y: -10.835915}
       - {x: 3.241803, y: -12.363426}
       - {x: 9.660342, y: -11.884608}
       - {x: 14.542735, y: -7.2347956}
@@ -1712,6 +1612,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1019542229, guid: 9e6dca4e46bf14049bbd6b57750909cb, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 535375735}
     - target: {fileID: 5621928209212285761, guid: 9e6dca4e46bf14049bbd6b57750909cb,
         type: 3}
       propertyPath: m_Name
@@ -1846,10 +1750,5 @@ PrefabInstance:
       propertyPath: GUI_Object
       value: 
       objectReference: {fileID: 429238183}
-    - target: {fileID: 9068886450502977343, guid: d92e32c25f982e04983e42aea09af7a9,
-        type: 3}
-      propertyPath: runSpeed
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92e32c25f982e04983e42aea09af7a9, type: 3}
