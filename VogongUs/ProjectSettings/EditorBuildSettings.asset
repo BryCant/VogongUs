@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/A_VogonShip.unity
     guid: e4816f7a310de4322b6b3102899fa6bf
   - enabled: 1
+    path: Assets/Scenes/F_VogonShip.unity
+    guid: 7c0e0dc8e27269f439a8acfb72bfe723
+  - enabled: 1
     path: Assets/Scenes/Poem.unity
     guid: 9f522a9ca4d4cdb429b01f31aa4f8b0e
   - enabled: 1

@@ -35,6 +35,6 @@ public class MainMenu_Logic : MonoBehaviour
 
     public void Ford()
     {
-        SceneManager.LoadScene("A_VogonShip");
+        SceneManager.LoadScene("F_VogonShip");
     }
 }
