@@ -37,4 +37,9 @@ public class MainMenu_Logic : MonoBehaviour
     {
         SceneManager.LoadScene("F_VogonShip");
     }
+
+    public void Continue()
+    {
+        Instructions.SetActive(false);
+    }
 }

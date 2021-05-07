@@ -53,7 +53,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 6.91
 --- !u!114 &1019542229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiPath: {fileID: 1019542230}
   VogonGFX: {fileID: 5621928210999800957}
+  SH: {fileID: 0}
   target: {fileID: 0}
   minDistance: 5
 --- !u!1 &5621928210999800957
@@ -254,7 +255,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -276971885
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a8f171aed38f1487d8feed200fb3fbce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

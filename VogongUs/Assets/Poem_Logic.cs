@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Poem_Logic : MonoBehaviour
 {
+    public AudioClip[] sounds;
+    public AudioSource audSource;
+
     public GameObject[] DeathAnims;
     public SecondsHolder SH;
     int seconds;
@@ -22,6 +26,8 @@ public class Poem_Logic : MonoBehaviour
         seconds = SH.GetSeconds();
         Debug.Log("Total Seconds: " + seconds);
 
+        audSource.PlayOneShot(sounds[level]);
+
         MainDialogue.sprite = textBoxes[0];
         MainDialogue.SetNativeSize();
         Choice1.enabled = false;
@@ -32,14 +38,18 @@ public class Poem_Logic : MonoBehaviour
     public void Next()
     {
         level++;
+        audSource.Stop();
         Debug.Log("Level " + level);
         if (level > 0 && level <= 3)
         {
+            audSource.PlayOneShot(sounds[level]);
             MainDialogue.sprite = textBoxes[level];
             MainDialogue.SetNativeSize();
         }
         else if(level == 4)
         {
+            audSource.PlayOneShot(sounds[level]);
+
             MainDialogue.sprite = textBoxes[level];
             MainDialogue.SetNativeSize();
 
@@ -65,6 +75,8 @@ public class Poem_Logic : MonoBehaviour
             Choice1.enabled = false;
             Choice2.enabled = false;
 
+            audSource.PlayOneShot(sounds[9]);
+
             MainDialogue.sprite = textBoxes[9];
             MainDialogue.SetNativeSize();
         }
@@ -83,11 +95,15 @@ public class Poem_Logic : MonoBehaviour
             //Choice1.SetNativeSize();
             //Choice2.SetNativeSize();
 
+            audSource.PlayOneShot(sounds[10]);
+
             MainDialogue.sprite = textBoxes[10];
             MainDialogue.SetNativeSize();
         }
         else if (level == 10)
         {
+            audSource.PlayOneShot(sounds[13]);
+
             MainDialogue.sprite = textBoxes[13];
             MainDialogue.SetNativeSize();
 
@@ -104,6 +120,7 @@ public class Poem_Logic : MonoBehaviour
         }
         else if (level == 11)
         {
+            audSource.PlayOneShot(sounds[15]);
             MainDialogue.sprite = textBoxes[15];
             MainDialogue.SetNativeSize();
 
@@ -116,6 +133,8 @@ public class Poem_Logic : MonoBehaviour
         }
         else if (level == 13)
         {
+            audSource.PlayOneShot(sounds[17]);
+
             MainDialogue.sprite = textBoxes[17];
             MainDialogue.SetNativeSize();
 

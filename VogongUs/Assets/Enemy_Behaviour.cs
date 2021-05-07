@@ -10,14 +10,18 @@ public class Enemy_Behaviour : MonoBehaviour
     public AIPath aiPath;
     public GameObject VogonGFX;
 
+    public SecondsHolder SH;
+
     public Transform target;
     public float minDistance = 1f;
+    private float mindDistanceInc = 5f;
     private Vector3 startPosition;
 
 
     private void Start()
     {
         startPosition = transform.position;
+        mindDistanceInc = minDistance * 5;
     }
 
     // Update is called once per frame
@@ -42,6 +46,12 @@ public class Enemy_Behaviour : MonoBehaviour
             {
                 transform.position = Vector2.MoveTowards(transform.position, startPosition, 1 * Time.deltaTime);
             }
+        }
+        
+
+        if (SH.GetSeconds() > 15)
+        {
+            minDistance = mindDistanceInc;
         }
     }
 
