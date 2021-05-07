@@ -149,36 +149,48 @@ public class Poem_Logic : MonoBehaviour
 
     public void Choice1_Next()
     {
+        audSource.Stop();
         if (level == 4)
         {
             level = 7;
+            audSource.PlayOneShot(sounds[5]);
+            StartCoroutine(Wait(3));
         }
         if (level == 9)
         {
             level = 6;
+            audSource.PlayOneShot(sounds[11]);
+            StartCoroutine(Wait(4));
         }
         if (level == 10)
         {
             level = 10;
+            audSource.PlayOneShot(sounds[14]);
+            StartCoroutine(Wait(6));
         }
-        Next();
     }
 
     public void Choice2_Next()
     {
+        audSource.Stop();
         if (level == 4)
         {
             level = 6;
+            audSource.PlayOneShot(sounds[6]);
+            StartCoroutine(Wait(3));
         }
         if (level == 9)
         {
             level = 9;
+            audSource.PlayOneShot(sounds[12]);
+            StartCoroutine(Wait(26));
         }
         if (level == 10)
         {
             level = 12;
+            audSource.PlayOneShot(sounds[16]);
+            StartCoroutine(Wait(6));
         }
-        Next();
     }
 
     void Death()
@@ -199,4 +211,9 @@ public class Poem_Logic : MonoBehaviour
         }
     }
 
+    IEnumerator Wait(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        Next();
+    }
 }
