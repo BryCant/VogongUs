@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Poem_Logic : MonoBehaviour
 {
     public GameObject[] DeathAnims;
-    int seconds = 0;
+    public SecondsHolder SH;
+    int seconds;
 
     public Image MainDialogue;
     public Image Choice1;
@@ -18,6 +19,9 @@ public class Poem_Logic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        seconds = SH.GetSeconds();
+        Debug.Log("Total Seconds: " + seconds);
+
         MainDialogue.sprite = textBoxes[0];
         MainDialogue.SetNativeSize();
         Choice1.enabled = false;
@@ -166,7 +170,7 @@ public class Poem_Logic : MonoBehaviour
         Choice1.enabled = false;
         Choice2.enabled = false;
         level = 100;
-        if (seconds == 29)
+        if (seconds >= 29)
         {
             DeathAnims[0].SetActive(true);
         }

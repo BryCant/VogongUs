@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Vogon
+    uniqueID: 1229605471
+    locked: 0
   - name: main_character
     uniqueID: 4017995411
     locked: 0

@@ -11,8 +11,8 @@ public class Collectible_Logic : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SecondsGUI.seconds++;
-            Debug.Log(SecondsGUI.seconds);
+            SecondsGUI.IncSeconds();
+            Debug.Log(SecondsGUI.GetSeconds());
             Destroy(gameObject);
         }
     }

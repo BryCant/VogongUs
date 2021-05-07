@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SecondsHolder : MonoBehaviour
 {
-    public int seconds = 0;
+    static public int seconds = 0;
 
-    // Update is called once per frame
-    void Update()
+    public int GetSeconds()
     {
-        
+        return seconds;
+    }
+    public void IncSeconds()
+    {
+        seconds++;
     }
 }
