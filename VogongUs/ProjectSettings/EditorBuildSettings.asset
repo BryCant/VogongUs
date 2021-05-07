@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/VogonShip.unity
+    path: Assets/Scenes/Start.unity
+    guid: 499c92c3c52d4e84794e9d66211dd8ec
+  - enabled: 1
+    path: Assets/Scenes/A_VogonShip.unity
     guid: e4816f7a310de4322b6b3102899fa6bf
   - enabled: 1
     path: Assets/Scenes/Poem.unity
